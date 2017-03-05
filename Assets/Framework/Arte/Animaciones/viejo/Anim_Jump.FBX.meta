@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: ddcc53876c99ffb4ca914eda2776a901
+timeCreated: 1467404227
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: CATRigBrazoDer1
+    100004: CATRigBrazoDer2
+    100006: CATRigBrazoDerMano
+    100008: CATRigBrazoIzq1
+    100010: CATRigBrazoIzq2
+    100012: CATRigBrazoIzqMano
+    100014: CATRigCabeza
+    100016: CATRigCadera
+    100018: CATRigColumna1
+    100020: CATRigColumna2
+    100022: CATRigEscudo
+    100024: CATRigPiernaDer1
+    100026: CATRigPiernaDer2
+    100028: CATRigPiernaDerPie1
+    100030: CATRigPiernaDerPlatform
+    100032: CATRigPiernaDerTobillo
+    100034: CATRigPiernaDerUpVectorNode
+    100036: CATRigPiernaIzq1
+    100038: CATRigPiernaIzq2
+    100040: CATRigPiernaIzqPie1
+    100042: CATRigPiernaIzqPlatform
+    100044: CATRigPiernaIzqTobillo
+    100046: CATRigPiernaIzqUpVectorNode
+    100048: CATRigSpine
+    100050: CATRigTorso
+    400000: //RootNode
+    400002: CATRigBrazoDer1
+    400004: CATRigBrazoDer2
+    400006: CATRigBrazoDerMano
+    400008: CATRigBrazoIzq1
+    400010: CATRigBrazoIzq2
+    400012: CATRigBrazoIzqMano
+    400014: CATRigCabeza
+    400016: CATRigCadera
+    400018: CATRigColumna1
+    400020: CATRigColumna2
+    400022: CATRigEscudo
+    400024: CATRigPiernaDer1
+    400026: CATRigPiernaDer2
+    400028: CATRigPiernaDerPie1
+    400030: CATRigPiernaDerPlatform
+    400032: CATRigPiernaDerTobillo
+    400034: CATRigPiernaDerUpVectorNode
+    400036: CATRigPiernaIzq1
+    400038: CATRigPiernaIzq2
+    400040: CATRigPiernaIzqPie1
+    400042: CATRigPiernaIzqPlatform
+    400044: CATRigPiernaIzqTobillo
+    400046: CATRigPiernaIzqUpVectorNode
+    400048: CATRigSpine
+    400050: CATRigTorso
+    7400000: Anim_Jump
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Anim_Jump
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 3
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRigCadera
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso/CATRigBrazoDer1
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso/CATRigBrazoDer1/CATRigBrazoDer2
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso/CATRigBrazoDer1/CATRigBrazoDer2/CATRigBrazoDerMano
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso/CATRigBrazoDer1/CATRigBrazoDer2/CATRigBrazoDerMano/CATRigEscudo
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso/CATRigBrazoIzq1
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso/CATRigBrazoIzq1/CATRigBrazoIzq2
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso/CATRigBrazoIzq1/CATRigBrazoIzq2/CATRigBrazoIzqMano
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso/CATRigSpine
+        weight: 1
+      - path: CATRigCadera/CATRigColumna1/CATRigColumna2/CATRigTorso/CATRigSpine/CATRigCabeza
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaDer1
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaDer1/CATRigPiernaDer2
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaDer1/CATRigPiernaDer2/CATRigPiernaDerTobillo
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaDer1/CATRigPiernaDer2/CATRigPiernaDerTobillo/CATRigPiernaDerPie1
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaDerUpVectorNode
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaIzq1
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaIzq1/CATRigPiernaIzq2
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaIzq1/CATRigPiernaIzq2/CATRigPiernaIzqTobillo
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaIzq1/CATRigPiernaIzq2/CATRigPiernaIzqTobillo/CATRigPiernaIzqPie1
+        weight: 1
+      - path: CATRigCadera/CATRigPiernaIzqUpVectorNode
+        weight: 1
+      - path: CATRigPiernaDerPlatform
+        weight: 1
+      - path: CATRigPiernaIzqPlatform
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

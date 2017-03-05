@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 4715a6845e2f6ac4bbf9e07131a7491b
+timeCreated: 1467658578
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cabeza
+    100002: CATRigBrazoDer1
+    100004: CATRigBrazoDer2
+    100006: CATRigBrazoDerMano
+    100008: CATRigBrazoIzq1
+    100010: CATRigBrazoIzq2
+    100012: CATRigBrazoIzqMano
+    100014: CATRigCabeza
+    100016: CATRigCadera
+    100018: CATRigColumna1
+    100020: CATRigColumna2
+    100022: CATRigEscudo
+    100024: CATRigPiernaDer1
+    100026: CATRigPiernaDer2
+    100028: CATRigPiernaDerPie1
+    100030: CATRigPiernaDerTobillo
+    100032: CATRigPiernaIzq1
+    100034: CATRigPiernaIzq2
+    100036: CATRigPiernaIzqPie1
+    100038: CATRigPiernaIzqTobillo
+    100040: CATRigSpine
+    100042: CATRigTorso
+    100044: Cuerpo
+    100046: Escudo
+    100048: //RootNode
+    400000: Cabeza
+    400002: CATRigBrazoDer1
+    400004: CATRigBrazoDer2
+    400006: CATRigBrazoDerMano
+    400008: CATRigBrazoIzq1
+    400010: CATRigBrazoIzq2
+    400012: CATRigBrazoIzqMano
+    400014: CATRigCabeza
+    400016: CATRigCadera
+    400018: CATRigColumna1
+    400020: CATRigColumna2
+    400022: CATRigEscudo
+    400024: CATRigPiernaDer1
+    400026: CATRigPiernaDer2
+    400028: CATRigPiernaDerPie1
+    400030: CATRigPiernaDerTobillo
+    400032: CATRigPiernaIzq1
+    400034: CATRigPiernaIzq2
+    400036: CATRigPiernaIzqPie1
+    400038: CATRigPiernaIzqTobillo
+    400040: CATRigSpine
+    400042: CATRigTorso
+    400044: Cuerpo
+    400046: Escudo
+    400048: //RootNode
+    4300000: Cuerpo
+    4300002: Escudo
+    4300004: Cabeza
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Cabeza
+    13700002: Cuerpo
+    13700004: Escudo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
