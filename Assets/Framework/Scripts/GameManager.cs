@@ -82,19 +82,14 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public void NextLevel()
+    public void NextLevel(string nextLevel)
     {
         hasCheckpoint = false;
-        currentLevel++;
-        if (Application.CanStreamedLevelBeLoaded("Level" + currentLevel))
+       
+        if (Application.CanStreamedLevelBeLoaded(nextLevel))
         {
-            SceneManager.LoadScene("Level" + currentLevel);
-        }
-        else
-        {
-            SceneManager.LoadScene("Victory");
-        }
-        
+            SceneManager.LoadScene(nextLevel);
+        }        
 
     }
 }

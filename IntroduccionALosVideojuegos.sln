@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroduccionALosVideojuegos.CSharp", "IntroduccionALosVideojuegos.CSharp.csproj", "{61A76AB3-6468-B1A5-6BFB-35111292F02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroduccionALosVideojuegos.CSharp.Editor", "IntroduccionALosVideojuegos.CSharp.Editor.csproj", "{2539168A-2D7E-8E2E-AFBE-C83DC9BF264B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61A76AB3-6468-B1A5-6BFB-35111292F02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A76AB3-6468-B1A5-6BFB-35111292F02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A76AB3-6468-B1A5-6BFB-35111292F02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A76AB3-6468-B1A5-6BFB-35111292F02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2539168A-2D7E-8E2E-AFBE-C83DC9BF264B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2539168A-2D7E-8E2E-AFBE-C83DC9BF264B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2539168A-2D7E-8E2E-AFBE-C83DC9BF264B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2539168A-2D7E-8E2E-AFBE-C83DC9BF264B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
