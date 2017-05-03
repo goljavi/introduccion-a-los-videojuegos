@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour {
         _desiredPosition = desiredDestination;
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         transform.position = Vector3.Lerp(transform.position, _target.position + _desiredPosition, cameraSpeed * Time.deltaTime);
     }

@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour {
     public bool hasCheckpoint;
     public int lifes;
     public int coins;
-    public int currentLevel;
     public Vector3 checkPoint;
     public int keys;
     public GameObject KeyPlayer;
@@ -25,7 +24,6 @@ public class GameManager : MonoBehaviour {
             coins = instance.coins;
             checkPoint = instance.checkPoint;
             hasCheckpoint = instance.hasCheckpoint;
-            currentLevel = instance.currentLevel;
             Destroy(instance.gameObject);
         }
         instance = this;
@@ -54,12 +52,11 @@ public class GameManager : MonoBehaviour {
         lifes--;
         if (lifes > 0)
         {
-            SceneManager.LoadScene("Level" + currentLevel);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         else
         {
             lifes = lifesIcon.Length;
-            currentLevel = 1;
             SceneManager.LoadScene("GameOver");
         }
     }

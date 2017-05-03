@@ -13,7 +13,6 @@ public class LoadAScene : MonoBehaviour {
             if (GameManager.instance != null)
             {
                 GameManager.instance.lifes = GameManager.instance.lifesIcon.Length;
-                GameManager.instance.currentLevel = 1;
                 GameManager.instance.coins = 0;
             }
         }
