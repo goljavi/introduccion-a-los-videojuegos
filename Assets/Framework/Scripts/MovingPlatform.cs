@@ -10,8 +10,8 @@ public class MovingPlatform : MonoBehaviour {
     private bool _isGoingInitial;
 
 	void Start () {
-        initialPos = new Vector3(initialPos.x, initialPos.y, transform.position.z);
-        finalPos = new Vector3(finalPos.x, finalPos.y, transform.position.z);
+        initialPos = new Vector3(initialPos.x, initialPos.y, initialPos.z);
+        finalPos = new Vector3(finalPos.x, finalPos.y, finalPos.z);
 	}
 	
 	void Update () {

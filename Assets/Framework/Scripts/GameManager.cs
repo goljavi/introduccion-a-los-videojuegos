@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour {
         }
         else
         {
+            hasCheckpoint = false;
             lifes = lifesIcon.Length;
             SceneManager.LoadScene("GameOver");
         }
