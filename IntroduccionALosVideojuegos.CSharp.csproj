@@ -73,9 +73,6 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="XInputDotNetPure">
-      <HintPath>Assets\Framework\Plugins\x86_64\XInputDotNetPure.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Framework\Editors\Morph\MorphContainer.cs" />
@@ -105,6 +102,7 @@
     <Compile Include="Assets\Framework\Scripts\LoadAScene.cs" />
     <Compile Include="Assets\Framework\Scripts\MatchManager.cs" />
     <Compile Include="Assets\Framework\Scripts\MovingPlatform.cs" />
+    <Compile Include="Assets\Framework\Scripts\PickUpVida.cs" />
     <Compile Include="Assets\Framework\Scripts\Player.cs" />
     <Compile Include="Assets\Framework\Scripts\PostprocessTemplate.cs" />
     <Compile Include="Assets\Framework\Scripts\PowerUp.cs" />
@@ -112,7 +110,6 @@
     <Compile Include="Assets\Framework\Scripts\StepReciever.cs" />
     <Compile Include="Assets\Framework\Scripts\Trampa.cs" />
     <Compile Include="Assets\Framework\Scripts\VictoryArea.cs" />
-    <Compile Include="Assets\Framework\Scripts\XboxCtrlrInput.cs" />
     <Compile Include="Assets\Game\Scripts\Rotar.cs" />
   </ItemGroup>
   <ItemGroup>

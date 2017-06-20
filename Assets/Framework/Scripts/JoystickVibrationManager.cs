@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using XInputDotNetPure;
 
 public class JoystickVibrationManager : MonoBehaviour {
 
@@ -20,7 +19,7 @@ public class JoystickVibrationManager : MonoBehaviour {
     /// Actualiza la vibración de todos los joysticks
     /// </summary>
 	void Update () {
-        int length = _vibrationAmmount.Length;
+       /* int length = _vibrationAmmount.Length;
         for(int i = 0; i < length; i++)
         {
             PlayerIndex pi;
@@ -46,7 +45,7 @@ public class JoystickVibrationManager : MonoBehaviour {
                     _vibrationAmmount[i] = 0;
                 GamePad.SetVibration(pi, _vibrationAmmount[i], _vibrationAmmount[i]);
             }
-        }
+        }*/
 	}
 
     /// <summary>
@@ -116,7 +115,7 @@ public class JoystickVibrationManager : MonoBehaviour {
         else if (playerIndex < 0)
             playerIndex = 0;
         _vibrationTime[playerIndex] = 0;
-        PlayerIndex pi;
+        /*PlayerIndex pi;
         switch (playerIndex)
         {
             case 0:
@@ -132,7 +131,7 @@ public class JoystickVibrationManager : MonoBehaviour {
                 pi = PlayerIndex.Four;
                 break;
         }
-        GamePad.SetVibration(pi, 0, 0);
+        GamePad.SetVibration(pi, 0, 0);*/
     }
 
     /// <summary>

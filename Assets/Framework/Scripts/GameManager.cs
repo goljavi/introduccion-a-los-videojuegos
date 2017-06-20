@@ -80,12 +80,19 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public void AddLife()
+    {
+        lifes++;
+        UpdateInfo();
+    }
+
     public void NextLevel(string nextLevel)
     {
         hasCheckpoint = false;
        
         if (Application.CanStreamedLevelBeLoaded(nextLevel))
         {
+            CameraController.desiredDestination = Vector3.zero;
             SceneManager.LoadScene(nextLevel);
         }        
 

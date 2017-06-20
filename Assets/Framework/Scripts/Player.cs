@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using XInputDotNetPure;
 
 public class Player : MonoBehaviour {
 
@@ -20,10 +19,8 @@ public class Player : MonoBehaviour {
     public AudioClip step;
     public AudioClip powerUp;
     public AudioClip music;
-    //public Transform spawnGroundParticles;
     public bool enableParticles;
     public GameObject stepParticlePrefab;
-    //public GameObject jumpParticlePrefab;
     
     private TrailRenderer _trailRenderer;
     private PostprocessTemplate _postProcess;
@@ -91,10 +88,10 @@ public class Player : MonoBehaviour {
     void Update() {
         if (enableRumble)
         {
-            PlayerIndex pi;
+            /*PlayerIndex pi;
             if (player == 1) pi = PlayerIndex.One;
             else pi = PlayerIndex.Two;
-            GamePad.SetVibration(pi, _joystickVibration, _joystickVibration);
+            GamePad.SetVibration(pi, _joystickVibration, _joystickVibration);*/
         }
         _joystickVibration -= _joystickVibration * Time.deltaTime + 0.5f * Time.deltaTime;
         if (_joystickVibration < 0) _joystickVibration = 0;
@@ -108,7 +105,7 @@ public class Player : MonoBehaviour {
             _currentBonusPull = 0;
             _currentBonusSpeed = 0;
         }
-        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || XboxCtrlrInput.XCI.GetButtonDown(XboxCtrlrInput.XboxButton.A, player)) && _canJump)
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) && _canJump)
         {
             _jumpButton = false;
             if (_doubleJump)
@@ -138,34 +135,18 @@ public class Player : MonoBehaviour {
         }
         bool walking = false;
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) || XboxCtrlrInput.XCI.GetAxisRaw(XboxCtrlrInput.XboxAxis.LeftStickX, player) < -0.2f)
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             walking = true;
             _rigidBody.AddForce(Vector3.left * (movSpeed + _currentBonusSpeed));
             transform.forward = -Vector3.forward;
         }
-        else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) || XboxCtrlrInput.XCI.GetAxisRaw(XboxCtrlrInput.XboxAxis.LeftStickX, player) > 0.2f)
+        else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             walking = true;
             transform.forward = Vector3.forward;
             _rigidBody.AddForce(-Vector3.left * (movSpeed + _currentBonusSpeed));
         }
-        /*if (_currentCDToHit >= cdToHit && (Input.GetKeyDown(KeyCode.S) || XboxCtrlrInput.XCI.GetButtonDown(XboxCtrlrInput.XboxButton.X, player)))
-        {
-            if (enableSounds)
-                _soundManager.ReproduceSound(SoundManager.SoundType.SFX, hit);
-            _joystickVibration = 0.5f;
-            animator.SetTrigger(ANIM_SHIELDATTACK);
-            _currentCDToHit = 0;
-            if (Vector3.Distance(transform.position, _enemyRigidBody.transform.position) > Vector3.Distance(transform.position + transform.right / 5, _enemyRigidBody.transform.position) && Mathf.Abs(transform.position.y - _enemyRigidBody.transform.position.y) < 1)
-            {
-                if(Vector3.Distance(transform.position, _enemyRigidBody.transform.position) < 2f)
-                    _postProcess.noiseAmmount = 0.03f;
-                _enemyRigidBody.GetComponent<Player>().AddVibration(0.6f);
-                var v = new Vector3(_enemyRigidBody.transform.position.x - transform.position.x, 0, 0);
-                _enemyRigidBody.AddExplosionForce((explosionForce + _currentBonusPull), _enemyRigidBody.transform.position - v, explosionRadius);
-            }
-        }*/
 
         animator.SetBool(ANIM_IDLE, !walking);
         animator.SetBool(ANIM_RUN, walking);
