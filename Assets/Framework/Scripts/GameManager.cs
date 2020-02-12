@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour {
     public Text coinsText;
     public Text lifesNumber;
     public AudioClip keyGrab;
+    public AudioClip deathSound;
 
     AudioSource _as;
 
@@ -61,7 +62,7 @@ public class GameManager : MonoBehaviour {
         lifes--;
         if (lifes > 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            StartCoroutine(Respawn());
         }
         else
         {
@@ -69,6 +70,15 @@ public class GameManager : MonoBehaviour {
             lifes = lifesIcon.Length;
             SceneManager.LoadScene("GameOver");
         }
+    }
+
+    IEnumerator Respawn()
+    {
+        Time.timeScale = 0;
+        _as.PlayOneShot(deathSound);
+        yield return new WaitForSecondsRealtime(2);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void AddCoin()

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : MonoBehaviour {
-
+    public AudioClip doorOpenSound;
+    public AudioSource audioSource;
     private Vector3 _openPosition;
     private bool _open;
 
@@ -28,6 +29,7 @@ public class Door : MonoBehaviour {
                 {
                     GameManager.instance.keys--;
                     GameManager.instance.UpdateKeys();
+                    audioSource.PlayOneShot(doorOpenSound);
                     _open = true;
                 }
             }
