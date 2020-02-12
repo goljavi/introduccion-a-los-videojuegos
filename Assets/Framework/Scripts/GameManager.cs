@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour {
     public GameObject[] lifesIcon;
     public Text coinsText;
     public Text lifesNumber;
+    public AudioClip keyGrab;
+
+    AudioSource _as;
 
     void Start () {
 		if(instance != null)
@@ -35,6 +38,7 @@ public class GameManager : MonoBehaviour {
         }
         UpdateInfo();
         FindObjectOfType<Player>().GetComponent<Rigidbody>().velocity = Vector3.zero;
+        _as = GetComponent<AudioSource>();
         DontDestroyOnLoad(gameObject);
 	}
 
@@ -82,11 +86,12 @@ public class GameManager : MonoBehaviour {
 
     public void UpdateKeys()
     {
-        if (keys > 0 && !KeyPlayer.active)
+        if (keys > 0 && !KeyPlayer.activeSelf)
         {
             KeyPlayer.SetActive(true);
+            _as.PlayOneShot(keyGrab);
         }
-        else if (keys == 0 && KeyPlayer.active)
+        else if (keys == 0 && KeyPlayer.activeSelf)
         {
             KeyPlayer.SetActive(false);
         }

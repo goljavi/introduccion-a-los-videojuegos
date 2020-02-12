@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Checkpoint : MonoBehaviour {
+    public AudioSource audioSource;
+    public AudioClip activate;
     bool activated;
 
 	void OnTriggerEnter(Collider c)
@@ -12,6 +14,7 @@ public class Checkpoint : MonoBehaviour {
             GameManager.instance.checkPoint = transform.position;
             GameManager.instance.hasCheckpoint = true;
             transform.GetChild(0).GetComponent<MeshRenderer>().materials[1].SetFloat("_RimPower", 0.1f);
+            audioSource.PlayOneShot(activate);
             activated = true;
         }
     }
