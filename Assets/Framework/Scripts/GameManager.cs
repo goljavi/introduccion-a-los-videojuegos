@@ -11,13 +11,15 @@ public class GameManager : MonoBehaviour {
     public bool hasCheckpoint;
     public int lifes;
     public int coins;
+    public int coinsToLife;
     public Vector3 checkPoint;
     public int keys;
     public GameObject KeyPlayer;
     public GameObject[] lifesIcon;
     public Text coinsText;
+    public Text lifesNumber;
 
-	void Start () {
+    void Start () {
 		if(instance != null)
         {
             lifes = instance.lifes;
@@ -38,13 +40,16 @@ public class GameManager : MonoBehaviour {
 
     private void UpdateInfo()
     {
-        if (lifesIcon.Length < lifes) lifes = lifesIcon.Length;
-        for (var i = 0; i < lifesIcon.Length; i++)
-            lifesIcon[i].gameObject.SetActive(false);
-        for (var i = 0; i < lifes; i++)
-            lifesIcon[i].gameObject.SetActive(true);
-
+        if (lifesIcon.Length >= lifes)
+        {
+            for (var i = 0; i < lifesIcon.Length; i++)
+                lifesIcon[i].gameObject.SetActive(false);
+            for (var i = 0; i < lifes; i++)
+                lifesIcon[i].gameObject.SetActive(true);
+        }
+        
         coinsText.text = ""+coins+" x";
+        lifesNumber.text = "" + lifes;
     }
 
     public void Die()
@@ -65,6 +70,13 @@ public class GameManager : MonoBehaviour {
     public void AddCoin()
     {
         coins++;
+
+        if(coinsToLife > 0 && coins >= coinsToLife)
+        {
+            coins -= coinsToLife;
+            lifes++;
+        }
+
         UpdateInfo();
     }
 
