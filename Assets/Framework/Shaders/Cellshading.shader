@@ -1,4 +1,6 @@
-﻿Shader "Sarasa/CellShading" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Sarasa/CellShading" {
 	Properties {
 		_Texture("Texture", 2D) = "white"{}
 		_InfRange ("Inflate", range(0, 20)) 		= 0
@@ -35,7 +37,7 @@
 				VertexOutput o;
 				float4 inflatePos = vp.vertex;
 				inflatePos.xyz += vp.normal * _InfRange * 0.05f;
-				o.vertex = mul(UNITY_MATRIX_MVP, inflatePos);
+				o.vertex = UnityObjectToClipPos(inflatePos);
 				return o;
 			}
 
