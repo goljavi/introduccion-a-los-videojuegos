@@ -10,8 +10,7 @@ public class MovingPlatform : MonoBehaviour {
     private bool _isGoingInitial;
 
 	void Start () {
-        initialPos = new Vector3(initialPos.x, initialPos.y, initialPos.z);
-        finalPos = new Vector3(finalPos.x, finalPos.y, finalPos.z);
+        initialPos = transform.position;
 	}
 	
 	void Update () {
@@ -28,4 +27,23 @@ public class MovingPlatform : MonoBehaviour {
                 _isGoingInitial = true;
         }
 	}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        var player = collision.transform.GetComponent<Player>();
+        if (player && player.transform.position.y > transform.position.y + .5f)
+            player.transform.SetParent(transform);
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        var player = collision.transform.GetComponent<Player>();
+        if (player)
+            player.transform.SetParent(null);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(finalPos, .25f);
+    }
 }
