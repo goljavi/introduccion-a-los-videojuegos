@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour {
     {
         Time.timeScale = 0;
         _as.PlayOneShot(deathSound);
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(0.7f);
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
